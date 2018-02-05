@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE.html>
 <html>
     <head>
         <title>Lucas Schneider Freelance Artist About Me</title>
@@ -6,7 +6,7 @@
         <link href="main.css" type="text/css" rel="stylesheet">
     </head>
     <body class="contact-me-body">
-        <div class="about-me-body">
+        <!-- <div class="about-me-body"> -->
          <header class="header">
             <img src="Logo.jpg" width="100px" height="100px">
             <div class="header-logo">
@@ -18,21 +18,30 @@
             </nav>
         </div>
         </header>
-        <div  class="contact-me-background-image" id="contact-me-text">
-            <h2>Contact Me</h2>
+        <div class="contact-me-background-image" id="contact-me-text">
             <p>Feel free to contact me at <a href="mailto:mr.lucasschneider@gmail.com">mr.lucasschneider@gmail.com</a> for the fastest reply!
                 <br>
             Please note me or email me at <a href="mailto:me.lucasschneider@gmail.com">me.lucasschneider@gmail.com</a> if you are interested in working together! Feel free to ask about prices and services.</p>
         </div>
-        <form>
-            <lable for="name">Name:</lable>
-            <input id="name" type="name" name="name" required>
-            <label for="email">Email:</label>
-            <input id="email" type="email" name="email" required>
-            <lable for="phone-number">Phone Number:</lable>
-            <input id="phone-number" type="number" name="phoneNumber" required>
-            <lable for="request">Request:</lable>
-            <input id="request" type="text" name="request" required>
-        </form>
+        <!-- form currently does not work will add back end once it is learned -->
+        <div class="form-contact-me">
+            <form>
+                <div>
+                    <lable for="name">Name:</lable>
+                    <input id="name" type="name" name="name" placeholder="Frist and Last" required>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+                <div>
+                    <lable for="phone-number">Phone Number:</lable>
+                    <input id="phone-number" type="number" name="phoneNumber" required>
+                </div>
+                <div>
+                    <lable for="request">Request:</lable>
+                    <textarea name="textAreaInput" rows="10" cols="100" required></textarea>
+                </div>
+                <input type="submit">
+            </form>
+        </div>
     </body>
 </html>

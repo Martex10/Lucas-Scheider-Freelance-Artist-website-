@@ -1,22 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: courier, helvetica;
+    /*box-sizing: border-box;*/
+    /* font-family: courier, helvetica;*/
 }
-/*body{
-    background: rgb(230, 230, 230);
-    text-align: center;
-}
-
----i edited the back ground per client request--- */
+/* whole site */
 body {
     background-image: url(background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 0px;
 }
+
  h1 , h2 , h3 , h4 {
     color: teal;
     font-weight: bold;
@@ -26,15 +21,7 @@ body {
 p {
     text-align: center;
 }
-/*.main-images {
-    position: relative;
-    top: 50px;
-}*/
-
-div.paralax1, div.paralax2, div.paralax3, div.paralax4  {
-    width: 90%;
-    margin:50px auto;
-}
+/*header*/
 .header-logo {
     margin-left:25%;
     width: 50%;
@@ -44,11 +31,49 @@ div.paralax1, div.paralax2, div.paralax3, div.paralax4  {
 .header-logo p {
     color: darkred;
 }
-.header h1{
-    text-align: center;
-}
 .header img{
     position: absolute;
+}
+.header {
+    background: lightgray;
+    height: 130px;
+    max-height: 130px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/*navigation on all pages*/
+nav {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    margin:0px 0px;
+    font-family: sans-serif;
+}
+nav a {
+    margin: 0px;
+}
+.header a:link, .header a:visited {
+    color:teal;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px;
+    font-weight: bold;
+}
+.header a:hover {
+    color: darkred;
+    transition: .75s;
+}
+
+.header a:active {
+    color: purple;
+    text-decoration: none;
+    transition: .001s;
+}
+/* images on main page index.html*/
+div.paralax1, div.paralax2, div.paralax3, div.paralax4  {
+    width: 90%;
+    margin:50px auto;
 }
 .paralax1 {
     background-image: url(http://lucasschneider.com/wp-content/uploads/2013/06/two-planets.png) ;
@@ -78,39 +103,10 @@ div.paralax1, div.paralax2, div.paralax3, div.paralax4  {
     background-attachment: fixed;
     height: 75%;
 }
-.header p {
-    margin: 0px auto;
-    text-align: center ;
-
-}
+/*footer for all pages */
 footer{
-    text-align: center ;
-}
-nav {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: normal;
-    margin:0px 0px;
-    font-family: sans-serif;
-}
-footer {
     margin: 50px;
 }
-nav a {
-    margin: 0px;
-}
-.header {
-    background: black;
-    height: 100px;
-    max-height: 100px;
-    margin-top: 20px;
-    padding: 20px;
-}
-.header-logo{
-    max-height: 100px
-}
-
-
 .about-me-text-box p {
     text-align: left;
     margin: 10px;
@@ -120,41 +116,27 @@ nav a {
     text-decoration: none;
     color: black;
 }
-.header a:link, .header a:visited {
-    color:teal;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 3px;
-    font-weight: bold;
-}
-
-.header a:hover {
-    color: darkred;
-}
-.header a{
-    transition: .75s;
-}
-.header a:active {
-    color: purple;
-    text-decoration: none;
-transition: .001s;
-}
-
+/* this is for the about me page */
 .section {
     max-width: 90%;
     min-width: 360px;
     margin: 0 auto;
     height: 500px;
-
 }
 .about-me-text-box p {
     color: darkred;
     margin: 0 auto;
-    font-size: 25px;
-    font-weight: 1000px;
+    font-size: 20px;
+    font-weight: 100px;
     background-color:white;
     opacity: .65;
 }
 div[class="lucas-image-container"] > img {
     margin:100px auto;
+}
+input {
+    margin-left: 10px;
+}
+.sketches {
+    margin: 0 auto;
 }
