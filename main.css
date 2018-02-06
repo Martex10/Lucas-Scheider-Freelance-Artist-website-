@@ -140,3 +140,13 @@ input {
 .sketches {
     margin: 0 auto;
 }
+/*art folder*/
+.gallery img {
+    float: left;
+    width: 30%;
+    margin-left: 1.6666667%;
+    margin-right: 1.6666667%;
+}
+/*.gallery p {
+    width:30%;
+}*/
