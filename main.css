@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inknut Antiqua', serif;
+    font-family: 'Open Sans Condensed', serif;
     /*box-sizing: border-box;*/
     /* font-family: courier, helvetica;*/
 }
@@ -11,47 +11,60 @@ body {
 }
 
 /*header*/
-.header-content {
+.header-content a{
 /*    text-align: center;*/
+font-size: 200px;
     }
 .header-content p {
     color: darkred;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing:2px;
-    word-spacing: 3px
+    word-spacing: 3px;
+
 }
 .header {
     background: linear-gradient(white, darkgray);
-    border: 1px solid black;
+    border: 1px solid darkgray;
     box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+    font-size: 30px;
 }
 
 /*navigation on all pages*/
-nav {
+.nav-left {
     text-transform: uppercase;
-    font-size: 5px;
+    font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
     word-spacing: 5px;
+    float: left ;
+    margin-top: 37px;
+}
+.nav-right {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    word-spacing: 5px;
+    float: right ;
+    margin-right: 10px;
+    margin-top: 37px;
 }
 .header a:link, .header a:visited {
-    color:teal;
+
     text-decoration: none;
     font-size: 1em;
   /*  padding: 3px;
     font-weight: bold;*/
+    border: none;
+    color: rgba(55, 58, 130, 0.5);
 }
 #logo {
-    background-image: url(Logo.jpg);
-    background-repeat: no-repeat;
-   /* height: 100px;*/
-    background-size: 50px;
-
+    width: 100px;
+    float: left;
 }
 .header a:hover {
     color: darkred;
     transition: .75s;
-    background-color: white;
 }
 
 .header a:active {
@@ -59,9 +72,11 @@ nav {
     text-decoration: none;
     transition: .001s;
 }
-.header h1 {
+h1#title {
     font-size: 1.5em;
     text-align: center;
+    color: rgb(95, 95, 107);
+
 }
 
 /*footer for all pages */
@@ -74,7 +89,6 @@ nav {
     text-decoration: none;
     color: black;
 }
-/*the footer*/
 footer {
     background-color: lightgray;
     width: 100%;
@@ -155,11 +169,15 @@ div.paralax1, div.paralax2, div.paralax3, div.paralax4  {
     background-size: cover;
     background-attachment: fixed;
 }
-button {
+/*looks better with out button*/
+/*button {
     background-color: lightblue;
     border: none;
-}
+}*/
 .container {
     margin: 0 auto;
     width: 90%;
+}
+.container1 {
+    margin: 90px auto 0 auto;
 }
