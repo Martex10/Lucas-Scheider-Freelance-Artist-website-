@@ -2,17 +2,32 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans Condensed', serif;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     /* font-family: courier, helvetica;*/
 }
-/* whole site */
+/* ================whole site ================*/
 body {
     background-color: rgb(244, 246, 249);
+    height: 100%;
 }
-
-/*header*/
+html{
+    height: 100%;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display:table;
+}
+.wraper{
+    min-height: 100%;
+   /*position: relative;*/
+}
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+/*=============header================*/
 .header-content a{
-/*    text-align: center;*/
 font-size: 200px;
     }
 .header-content p {
@@ -29,7 +44,7 @@ font-size: 200px;
     font-size: 30px;
 }
 
-/*navigation on all pages*/
+/*==============navigation on all pages=====================*/
 .nav-left {
     text-transform: uppercase;
     font-size: 20px;
@@ -76,49 +91,80 @@ h1#title {
     font-size: 1.5em;
     text-align: center;
     color: rgb(95, 95, 107);
-
 }
 
-/*footer for all pages */
-.about-me-text-box p {
-    text-align: left;
-    margin: 10px;
-    font-size: 20px;
+
+/*---====------------Contact me page ------------------====-*/
+
+input {
+    margin-left: 10px;
 }
+
 .contact-me-body a:link, .contatc-me-body a:visited{
     text-decoration: none;
     color: black;
 }
-footer {
-    background-color: lightgray;
+
+button:hover{
+    cursor: pointer;
+    color: red;
+    transition: 1s;
+    background-color: linear-gradient(darkgray, rgb(244, 246, 249));
+}
+button{
+    padding: 2px;
+    width: 10%;
+    min-width: 100px;
+    margin:10px 0;
+}
+input{
+    width: 20%;
+    min-width: 150px;
+}
+textarea{
     width: 100%;
-    height: 20%;
 }
-/* this is for the about me page */
-.section {
-    max-width: 90%;
-    min-width: 360px;
-    margin: 0 auto;
-    height: 500px;
+#contact-me-text{
+    text-align: center;
+    font-size: 18px;
+    margin: 25px;
 }
+/* ===================Footer ======================*/
+footer {
+    background: linear-gradient(rgb(244, 246, 249), darkgray);
+    width: 100%;
+}
+
+/*======================== about me page ===========================*/
 .about-me-text-box p {
+    text-align: left;
+   /* margin: 10px;*/
+    font-size: 20px;
+}
+.about-me-text-box {
     color: darkred;
-    margin: 0 auto;
     font-size: 20px;
     font-weight: 100px;
-    background-color:white;
-    opacity: .65;
+    width: 58%;
+    float: left;
+    padding: 10px;
+    margin: 1%;
 }
-div[class="lucas-image-container"] > img {
-    margin:100px auto;
+#section-img {
+    width: 38%;
+    float: left;
+    margin: 1%;
 }
-input {
-    margin-left: 10px;
+div#section-img>img{
+    width: 100%;
 }
-.sketches {
-    margin: 0 auto;
+div#about-me-container{
+    border: 1px solid black;
+    background-color: black;
+    height: 100%;
 }
-/*art folder*/
+
+/* ========================Gallery (art folder.html)=========================== */
 .gallery img {
     float: left;
     width: 100%;
@@ -131,16 +177,14 @@ input {
     margin:100px 1.6666667%;
 
 }
-
-
-/*.gallery p {
-    width:30%;
-}*/
-/* images on main page index.html*/
+.sketches {
+    margin: 0 auto;
+}
+/*======================= images on main page index.html=========================*/
 div.paralax1, div.paralax2, div.paralax3, div.paralax4  {
     width: 100%;
     margin:50px auto;
-    height: 75%;
+    height: 80%;
     border: 1px solid black;
     box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
 }
@@ -169,15 +213,7 @@ div.paralax1, div.paralax2, div.paralax3, div.paralax4  {
     background-size: cover;
     background-attachment: fixed;
 }
-/*looks better with out button*/
-/*button {
-    background-color: lightblue;
-    border: none;
-}*/
-.container {
-    margin: 0 auto;
-    width: 90%;
-}
-.container1 {
+
+/*.container1 {
     margin: 90px auto 0 auto;
-}
+}*/

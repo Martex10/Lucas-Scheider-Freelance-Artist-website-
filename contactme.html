@@ -7,51 +7,62 @@
         <link href="main.css" type="text/css" rel="stylesheet">
 
     </head>
-    <body class="contact-me-body">
-        <!-- <div class="about-me-body"> -->
-         <div class="container">
-           <header class="header-content">
-            <!-- <img src="Logo.jpg" width="100px" height="100px"> -->
-            <div class="header">
-                <a href="index.html"><img id="logo" src="Logo idea.png"></a>
-                <nav class="nav-left">
-
-                    <a href="aboutme.html">About</a>
-                    <a href="contactme.html">Contact</a>
-                    <a href="artfolder.html">Gallery</a>
-                </nav>
-                <nav class="nav-right">
-                    <a href="#">Blog</a>
-                    <a href="#">Tutorials</a>
-                </nav>
-                <h1 id="title">Lucas Schneider Freelance Artist</h1>
+    <body>
+        <div class="wraper">
+        <!-- <div class="contact-me-body"> -->
+            <div class="container">
+                <header class="header-content clearfix">
+                <!-- <img src="Logo.jpg" width="100px" height="100px"> -->
+                    <div class="header">
+                        <a href="index.html"><img id="logo" src="Logo idea.png"></a>
+                        <nav class="nav-left">
+                            <a href="aboutme.html">About</a>
+                            <a href="contactme.html">Contact</a>
+                            <a href="artfolder.html">Gallery</a>
+                        </nav>
+                        <nav class="nav-right">
+                            <a href="#">Blog</a>
+                            <a href="#">Tutorials</a>
+                        </nav>
+                        <h1 id="title">Lucas Schneider Freelance Artist</h1>
+                    </div>
+                </header>
+                <div  id="contact-me-text" class="clearfix">
+                    <p>Feel free to contact me at <a href="mailto:mr.lucasschneider@gmail.com">mr.lucasschneider@gmail.com</a> for the fastest reply!
+                        <br>
+                    Please note me or email me at <a href="mailto:me.lucasschneider@gmail.com">me.lucasschneider@gmail.com</a> if you are interested in working together! Feel free to ask about prices and services.</p>
+                </div>
+            <!-- form currently does not work will add back end once it is learned -->
+            <div class="container clearfix">
+                <div class="form-contact-me">
+                    <form>
+                        <div>
+                            <lable for="name">Name:</lable>
+                            <input id="name" type="name" name="name" placeholder="Frist and Last" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <lable for="phone-number">Phone Number:</lable>
+                            <input id="phone-number" type="number" name="phoneNumber" placeholder="1 (987)" required>
+                        </div>
+                        <div>
+                            <lable for="request">Request:</lable>
+                            <textarea name="textAreaInput" rows="10" cols="100" required></textarea>
+                        </div>
+                        <button>submit</button>
+                    </form>
+                </div>
             </div>
-        </header>
-        <div class="contact-me-background-image" id="contact-me-text">
-            <p>Feel free to contact me at <a href="mailto:mr.lucasschneider@gmail.com">mr.lucasschneider@gmail.com</a> for the fastest reply!
-                <br>
-            Please note me or email me at <a href="mailto:me.lucasschneider@gmail.com">me.lucasschneider@gmail.com</a> if you are interested in working together! Feel free to ask about prices and services.</p>
-        </div>
-        <!-- form currently does not work will add back end once it is learned -->
-        <div class="form-contact-me">
-            <form>
-                <div>
-                    <lable for="name">Name:</lable>
-                    <input id="name" type="name" name="name" placeholder="Frist and Last" required>
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" name="email" required>
+            </div>
+</div>
+<footer>
+                <div class="container">
+                    <p>Find me on Social Media</p>
+                    <p>links to my other web pages</p>
                 </div>
-                <div>
-                    <lable for="phone-number">Phone Number:</lable>
-                    <input id="phone-number" type="number" name="phoneNumber" required>
-                </div>
-                <div>
-                    <lable for="request">Request:</lable>
-                    <textarea name="textAreaInput" rows="10" cols="100" required></textarea>
-                </div>
-                <input type="submit">
-            </form>
-        </div>
-    </div>
+            </footer>
     </body>
 </html>
