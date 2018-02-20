@@ -177,8 +177,18 @@ div#about-me-container{
     margin:100px 1.6666667%;
 
 }
-.sketches {
-    margin: 0 auto;
+h3 {
+    text-align: center;
+}
+div.sketches div{
+    float: left;
+    width: 30%;
+    margin:100px 1.6666667%;
+}
+.sketches img {
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
 }
 /*======================= images on main page index.html=========================*/
 div.paralax1, div.paralax2, div.paralax3, div.paralax4  {
