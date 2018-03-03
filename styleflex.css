@@ -4,9 +4,10 @@
 body {
     background: rgb(244, 246, 249);
     font-family: 'Open Sans Condensed', serif;
+    height: 100%;
 }
 html{
-        height:100%;
+    height:100%;
 }
 .wrapper{
     max-width: 90%;
@@ -33,7 +34,7 @@ nav ul{
     list-style-type: none;
     padding:0;
 }
-nav a {
+nav a , footer a{
     text-decoration: none;
     /*text-align: center;*/
     color: black;
@@ -46,7 +47,10 @@ nav a {
     padding: 2px;
     margin: 2px;
 }
-
+footer a:hover{
+    text-decoration: underline;
+    background-color: inherit;
+}
 nav a[class="nav-text-link"]:hover, .nav2 a:hover {
     background-color: #555;
 }
@@ -68,38 +72,133 @@ div.footer{
     height: 150px;
     background: linear-gradient(rgb(244, 246, 249), rgb(135, 138, 142));
 }
-.box img{
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 100%;
-    margin-top: 30px;
+.box{
+    height:250px;
+    width:100%;
     border: 1px solid darkgray;
     box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+    margin: 20px 0 20px 0;
 }
-    .flex-container{
+div#contact-me-text.box{
+    height:250px;
+    width:100%;
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+    margin: 20px 0 20px 0;
+}
+div#p1{
+    background-image: url("http://lucasschneider.com/wp-content/uploads/2013/06/two-planets.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+div#p2{
+    background-image: url("http://lucasschneider.com/wp-content/uploads/2013/06/Little-house-on-the-prarie.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+}
+div#p3{
+    background-image: url("http://lucasschneider.com/wp-content/uploads/2013/06/Kings-Crown2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+   /* background-attachment: fixed;*/
+    background-size: cover;
+}
+div#p4{
+    background-image: url("http://lucasschneider.com/wp-content/uploads/2013/06/waterfalls.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+   /* background-attachment: fixed;*/
+    background-size: cover;
+}
+#contact-me-text{
+    background-image: url("https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/22885922_2072562972770139_439724850001224573_n.jpg?oh=1b79318b4f0496fbd7898fd57658a802&oe=5AFD4A6B");
+    background-repeat: no-repeat;
+    background-position: top;
+   /* background-attachment: fixed;*/
+    background-size: cover;
+    background-color: rgba(66, 134, 244, 0.5);
+    border-radius: .25%;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: auto auto;
+    box-sizing: border-box;
+}
+#contact-me-text p{
+    background-color: white;
+    opacity: .6;
+}
+#contact-me-text a{
+    text-decoration: none;
+}
+
+div.flex-container{
     display: flex;
     flex-wrap: wrap;
 }
 #img-flex-1{
-     flex-grow: 1;
+    flex-grow: 1;
     flex-shrink: 1;
-}
-    .box img{
-    width: 100%;
-    margin-top: 30px;
-    border: 1px solid darkgray;
-    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
 }
 .wrapper-2{
     margin:0 auto;
     width: 90%;
 }
 
-/*--------------media--------------*/
+.container{
+    width:90%;
+    margin:0 auto;
+}
+
+div[class="about-me-image"], div[class="about-me-text-box"]{
+    flex-grow:1;
+}
+div[class="about-me-image"] img{
+    width: 100%;
+    margin: 50px auto;
+    border: 3px solid darkgray;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+}
+
+div[class="about-me-text-box"] p{
+    color: black;
+    font-weight: 700px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+
+}
+div.about-me-background#grid-container{
+    display: grid;
+    grid-auto-rows: 100%;
+    margin-top: 60px;
+    background-color: rgba(111, 214, 116,0.25) ;
+    border-radius: .25%;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+    padding: 20px;
+}
+#about-me-1{
+    grid-row: 1/2;
+    margin: 0 auto;
+    padding:0 auto;
+
+}
+#about-me-2{
+    grid-row: 2/3;
+}
+
+
+/*==========================================media===============================================*/
 
 
 @media screen and (min-width: 1110px){
-
+body{
+    height:100%;
+}
 nav {
     display: flex;
     background: linear-gradient(rgb(135, 138, 142), rgb(244, 246, 249), rgb(135, 138, 142));
@@ -118,7 +217,7 @@ nav a[href="index2.html"]{
 nav a[href="index2.html"]:hover {
     background-color: inherit;
 }
-nav a[class="nav-text-link"]:hover {
+nav a[class="nav-text-link"]:hover{
     text-decoration: underline;
     background-color: inherit;
 }
@@ -227,16 +326,11 @@ nav ul{
 div[id="grid-2"] img{
     width:100%;
 }
-
-    .flex-container{
-    display: flex;
-    flex-wrap: wrap;
-}
 #img-flex-1{
      flex-grow: 1;
     flex-shrink: 1;
 }
-    .box img{
+.box img{
     width: 100%;
     margin-top: 30px;
     border: 1px solid darkgray;
@@ -245,5 +339,99 @@ div[id="grid-2"] img{
 .wrapper-2{
     margin:0 auto;
     width: 90%;
+}
+
+div[class="about-me-image"], div[class="about-me-text-box"]{
+    flex-grow:1;
+}
+div[class="about-me-image"] img{
+    width: 100%;
+    margin: 50px auto;
+    border: 3px solid darkgray;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+}
+div[class="about-me-text-box"]{
+    margin: 50px auto;
+    padding:20px;
+}
+div[class="about-me-text-box"] p{
+    color: black;
+    font-weight: 700px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin: 2% auto;
+}
+div.about-me-background#grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1, minmax(150px,auto));
+    margin-top: 60px;
+    background-color: background-color: rgba(111, 214, 116,0.25);
+    border-radius: .25%;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+}
+#about-me-1{
+    grid-column: 1/2;
+    grid-row:1/2;
+    margin: 0 auto;
+    padding:0 auto;
+
+}
+#about-me-2{
+    grid-column: 2/3;
+    grid-row:1/2;
+}
+.box{
+    height:40%;
+    width:49%;
+    border: 1px solid darkgray;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+    margin: 20px;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+div#contact-me-text.box{
+    height:40%;
+    width:40%;
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px 0px gray, 0px 6px 20px 0px lightgray;
+    margin: 20px;
+    flex-grow: 30;
+    box-sizing: border-box;
+}
+.parallax{
+    margin-top: 50px;
+}
+div#p1{
+    background-image: url("http://lucasschneider.com/wp-content/uploads/2013/06/two-planets.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div#p2{
+    background-image: url("http://lucasschneider.com/wp-content/uploads/2013/06/Little-house-on-the-prarie.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div#p3{
+    background-image: url("http://lucasschneider.com/wp-content/uploads/2013/06/Kings-Crown2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div#p4{
+    background-image: url("http://lucasschneider.com/wp-content/uploads/2013/06/waterfalls.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 }
