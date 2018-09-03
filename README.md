@@ -1,2 +1,2 @@
 # Lucas-Scheider-Freelance-Artist-website-
-first project -creating a web sight for an artist-
+first project -creating a website for an artist-
